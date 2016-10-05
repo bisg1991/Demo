@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="30" name="Suite" parallel="tests">
+
+	<test name="Windows 8.1, Chrome 53.0.2785.116" parallel="methods"
+		thread-count="10">
+		<parameter name="browserName" value="Local Chrome" />
+		<classes>
+			<class name="com.globalchk.tests.LoginTestAdmin" />
+		</classes>
+	</test>
+
+<!-- 	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners> -->
+</suite> 
