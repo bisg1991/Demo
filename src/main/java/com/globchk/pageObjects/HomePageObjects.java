@@ -9,6 +9,7 @@ public class HomePageObjects {
 	
 	public HomePageObjects(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		System.out.println("Hello Git");
 	}
 }
 
