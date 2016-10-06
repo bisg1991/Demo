@@ -19,11 +19,13 @@ public class HomePageAdmin extends LandingPageAdmin {
 	}
     
 	//Method of the home page class
-	public HomePage verifyHomePage(){
+	public AdminReadingCenterAd verifyHomePage(){
+		
+		System.out.println("url: " + driver.getCurrentUrl());
 		
 		Assert.assertTrue(driver.getCurrentUrl().contains(objs.strTitle));
 		CommonFunctionsLib.log("Verify user is on home page");
 		
-		return new HomePage(driver, action);
+		return new AdminReadingCenterAd(driver, action);
 	}
 }

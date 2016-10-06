@@ -2,28 +2,25 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="34557" started-at="2016-10-06T04:41:48Z" finished-at="2016-10-06T04:42:22Z">
+  <suite name="Suite" duration-ms="28702" started-at="2016-10-06T13:00:03Z" finished-at="2016-10-06T13:00:32Z">
     <groups>
     </groups>
-    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="34557" started-at="2016-10-06T04:41:48Z" finished-at="2016-10-06T04:42:22Z">
+    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="28702" started-at="2016-10-06T13:00:03Z" finished-at="2016-10-06T13:00:32Z">
       <class name="com.globalchk.tests.LoginTestAdmin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="setUp" is-config="true" duration-ms="33074" started-at="2016-10-06T10:11:48Z" finished-at="2016-10-06T10:12:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="setUp" is-config="true" duration-ms="27440" started-at="2016-10-06T18:30:03Z" finished-at="2016-10-06T18:30:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="loginTest" duration-ms="1438" started-at="2016-10-06T10:12:21Z" finished-at="2016-10-06T10:12:22Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
+        <test-method status="FAIL" signature="loginTest()[pri:1, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="loginTest" duration-ms="1202" started-at="2016-10-06T18:30:31Z" finished-at="2016-10-06T18:30:32Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.globchk.pages.HomePageAdmin.verifyHomePage(HomePageAdmin.java:24)
-	at com.globalchk.tests.LoginTestAdmin.loginTest(LoginTestAdmin.java:16)
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getTagName(Unknown Source)
+	at com.saf.functions.WebActions.click(WebActions.java:22)
+	at com.globchk.pages.AdminReadingCenterAd.addReadingcenteruser(AdminReadingCenterAd.java:24)
+	at com.globalchk.tests.LoginTestAdmin.loginTest(LoginTestAdmin.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -39,11 +36,11 @@
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="destory()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="destory" is-config="true" duration-ms="0" started-at="2016-10-06T10:12:22Z" finished-at="2016-10-06T10:12:22Z">
+        <test-method status="PASS" signature="destory()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="destory" is-config="true" duration-ms="0" started-at="2016-10-06T18:30:32Z" finished-at="2016-10-06T18:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destory -->
