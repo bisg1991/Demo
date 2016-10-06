@@ -22,7 +22,7 @@ public class TestBaseAdmin {
 	@BeforeMethod
 	public void setUp() {
 
-		System.setProperty("webdriver.gecko.driver", "F:\\seleniumOcm30\\geckodriver-v0.10.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "E:\\Selenium Java\\geckodriver.exe");
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);
 		WebDriver driver = new MarionetteDriver(capabilities); //for selenium 3 use new

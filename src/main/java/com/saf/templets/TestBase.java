@@ -8,8 +8,6 @@ import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.remote.RemoteTestNG;
-
 import com.globchk.pages.LandingPage;
 import com.saf.functions.CommonFunctionsLib;
 import com.saf.functions.WebActions;
