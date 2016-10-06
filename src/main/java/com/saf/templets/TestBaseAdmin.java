@@ -6,9 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
+import com.globchk.pageObjects.AdminReadingCenterAdd;
+import com.globchk.pages.AdminReadingCenterAd;
 import com.globchk.pages.LandingPage;
 import com.globchk.pages.LandingPageAdmin;
 import com.saf.functions.CommonFunctionsLib;
@@ -18,11 +23,12 @@ public class TestBaseAdmin {
 	private WebDriver driver;
 	private WebActions action;
 	protected LandingPageAdmin landingPage;
+	protected AdminReadingCenterAd add;
 
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.gecko.driver", "F:\\seleniumOcm30\\geckodriver-v0.10.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "E:\\Selenium Java\\geckodriver.exe");
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);
 		WebDriver driver = new MarionetteDriver(capabilities); //for selenium 3 use new
@@ -34,9 +40,10 @@ public class TestBaseAdmin {
 		CommonFunctionsLib.log("Navigate to 'http://globechek.softwebopensource.com/admin'");
 		action = new WebActions(driver);
 		landingPage = new LandingPageAdmin(driver, action);
+		add=new AdminReadingCenterAd(driver, action);
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void destory() {
 		if (driver != null) {
 			driver.close();

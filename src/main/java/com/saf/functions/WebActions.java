@@ -6,6 +6,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebActions {
@@ -69,4 +70,11 @@ public class WebActions {
 		}
 		return true;
 	}
+    
+	public WebElement selectdropdown(WebElement ele,String option){
+    	Select sel = new Select(ele);
+    	sel.selectByVisibleText(option);
+    	return ele;
+    }
+
 }
