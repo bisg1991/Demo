@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Windows 8.1, Chrome 53.0.2785.116</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 06 18:30:03 IST 2016</td>
+<td>Started on:</td><td>Fri Oct 07 10:38:54 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28702 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35371 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,57 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.globalchk.tests.LoginTestAdmin.loginTest()'><b>loginTest</b><br>Test class: com.globalchk.tests.LoginTestAdmin</td>
-<td><div><pre>java.lang.NullPointerException
+<td title='com.globalchk.tests.LoginTestAdmin.addUserAdminReading()'><b>addUserAdminReading</b><br>Test class: com.globalchk.tests.LoginTestAdmin</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.79 seconds
+Build info: version: &apos;unknown&apos;, revision: &apos;c7b525d&apos;, time: &apos;2016-09-01 14:57:44 -0700&apos;
+System info: host: &apos;PC4155&apos;, ip: &apos;192.168.4.155&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3cd254bf-c31d-43bf-a2b8-3010289aa805
+*** Element info: {Using=link text, value=Add Admin/Reading Center}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:426)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy7.getTagName(Unknown Source)
 	at com.saf.functions.WebActions.click(WebActions.java:22)
 	at com.globchk.pages.AdminReadingCenterAd.addReadingcenteruser(AdminReadingCenterAd.java:24)
-	at com.globalchk.tests.LoginTestAdmin.loginTest(LoginTestAdmin.java:13)
+	at com.globalchk.tests.LoginTestAdmin.addUserAdminReading(LoginTestAdmin.java:18)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace334298200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace334298200'><pre>java.lang.NullPointerException
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1349597765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1349597765'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.79 seconds
+Build info: version: &apos;unknown&apos;, revision: &apos;c7b525d&apos;, time: &apos;2016-09-01 14:57:44 -0700&apos;
+System info: host: &apos;PC4155&apos;, ip: &apos;192.168.4.155&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3cd254bf-c31d-43bf-a2b8-3010289aa805
+*** Element info: {Using=link text, value=Add Admin/Reading Center}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:426)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy7.getTagName(Unknown Source)
 	at com.saf.functions.WebActions.click(WebActions.java:22)
 	at com.globchk.pages.AdminReadingCenterAd.addReadingcenteruser(AdminReadingCenterAd.java:24)
-	at com.globalchk.tests.LoginTestAdmin.loginTest(LoginTestAdmin.java:13)
+	at com.globalchk.tests.LoginTestAdmin.addUserAdminReading(LoginTestAdmin.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,6 +140,19 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
+<td>6</td>
+<td>com.globalchk.tests.LoginTestAdmin@1a968a59</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.globalchk.tests.LoginTestAdmin.loginTest()'><b>loginTest</b><br>Test class: com.globalchk.tests.LoginTestAdmin</td>
+<td></td>
 <td>1</td>
 <td>com.globalchk.tests.LoginTestAdmin@1a968a59</td></tr>
 </table><p>

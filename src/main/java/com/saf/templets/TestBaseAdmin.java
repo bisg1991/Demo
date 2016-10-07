@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import com.globchk.pageObjects.AdminReadingCenterAdd;
+import com.globchk.pageObjects.AdminReadingCenterAddObjects;
 import com.globchk.pages.AdminReadingCenterAd;
 import com.globchk.pages.LandingPage;
 import com.globchk.pages.LandingPageAdmin;
@@ -40,7 +40,7 @@ public class TestBaseAdmin {
 		CommonFunctionsLib.log("Navigate to 'http://globechek.softwebopensource.com/admin'");
 		action = new WebActions(driver);
 		landingPage = new LandingPageAdmin(driver, action);
-		add=new AdminReadingCenterAd(driver, action);
+//		add=new AdminReadingCenterAd(driver, action);
 	}
 
 	@AfterClass

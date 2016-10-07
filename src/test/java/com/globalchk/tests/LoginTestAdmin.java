@@ -9,12 +9,12 @@ public class LoginTestAdmin extends TestBaseAdmin {
 
 		@Test (priority=1)
 		public void loginTest() throws SeleniumException {
-			landingPage.login("admin@admin.com", "admin").verifyHomePage();
-			add.addReadingcenteruser();
+			add=landingPage.login("admin@admin.com", "admin").verifyHomePage();
+			
 		}
 	
-        /*@Test (priority=2)
+        @Test (priority=2)
         public void addUserAdminReading() throws SeleniumException{
         	add.addReadingcenteruser();
-        }*/
+        }
 }

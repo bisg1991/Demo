@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AdminReadingCenterAdd {
+public class AdminReadingCenterAddObjects {
 	
-	public WebDriver driver;
+	//public WebDriver driver;
 	
-	public AdminReadingCenterAdd(WebDriver d){
+	public AdminReadingCenterAddObjects(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
 	

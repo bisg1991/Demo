@@ -2,21 +2,18 @@ package com.globchk.pages;
 
 import org.openqa.selenium.WebDriver;
 
-import com.globchk.pageObjects.AdminReadingCenterAdd;
+import com.globchk.pageObjects.AdminReadingCenterAddObjects;
 import com.saf.functions.CommonFunctionsLib;
 import com.saf.functions.SeleniumException;
 import com.saf.functions.WebActions;
 
-public class AdminReadingCenterAd {
+public class AdminReadingCenterAd extends HomePageAdmin {
 
-	protected WebDriver driver;
-	private AdminReadingCenterAdd arcd;
-	protected WebActions action;
+	private AdminReadingCenterAddObjects arcd;
 	
 	public AdminReadingCenterAd(WebDriver driver, WebActions action) {
-		this.driver = driver;
-		arcd = new AdminReadingCenterAdd(driver);
-		this.action = action; 
+		super(driver, action);
+		arcd = new AdminReadingCenterAddObjects(driver);
 	}
 
     public void addReadingcenteruser() throws SeleniumException{

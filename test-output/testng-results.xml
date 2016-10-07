@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28702" started-at="2016-10-06T13:00:03Z" finished-at="2016-10-06T13:00:32Z">
+  <suite name="Suite" duration-ms="35371" started-at="2016-10-07T05:08:54Z" finished-at="2016-10-07T05:09:30Z">
     <groups>
     </groups>
-    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="28702" started-at="2016-10-06T13:00:03Z" finished-at="2016-10-06T13:00:32Z">
+    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="35371" started-at="2016-10-07T05:08:54Z" finished-at="2016-10-07T05:09:30Z">
       <class name="com.globalchk.tests.LoginTestAdmin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="setUp" is-config="true" duration-ms="27440" started-at="2016-10-06T18:30:03Z" finished-at="2016-10-06T18:30:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="setUp" is-config="true" duration-ms="27454" started-at="2016-10-07T10:38:54Z" finished-at="2016-10-07T10:39:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginTest()[pri:1, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="loginTest" duration-ms="1202" started-at="2016-10-06T18:30:31Z" finished-at="2016-10-06T18:30:32Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="loginTest" duration-ms="1151" started-at="2016-10-07T10:39:22Z" finished-at="2016-10-07T10:39:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="FAIL" signature="addUserAdminReading()[pri:2, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="addUserAdminReading" duration-ms="6708" started-at="2016-10-07T10:39:23Z" finished-at="2016-10-07T10:39:30Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.79 seconds
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'PC4155', ip: '192.168.4.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3cd254bf-c31d-43bf-a2b8-3010289aa805
+*** Element info: {Using=link text, value=Add Admin/Reading Center}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.79 seconds
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'PC4155', ip: '192.168.4.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160623154057, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3cd254bf-c31d-43bf-a2b8-3010289aa805
+*** Element info: {Using=link text, value=Add Admin/Reading Center}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:426)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy7.getTagName(Unknown Source)
 	at com.saf.functions.WebActions.click(WebActions.java:22)
 	at com.globchk.pages.AdminReadingCenterAd.addReadingcenteruser(AdminReadingCenterAd.java:24)
-	at com.globalchk.tests.LoginTestAdmin.loginTest(LoginTestAdmin.java:13)
+	at com.globalchk.tests.LoginTestAdmin.addUserAdminReading(LoginTestAdmin.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -36,11 +68,11 @@
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="destory()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="destory" is-config="true" duration-ms="0" started-at="2016-10-06T18:30:32Z" finished-at="2016-10-06T18:30:32Z">
+        </test-method> <!-- addUserAdminReading -->
+        <test-method status="PASS" signature="destory()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1a968a59]" name="destory" is-config="true" duration-ms="0" started-at="2016-10-07T10:39:30Z" finished-at="2016-10-07T10:39:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destory -->

@@ -8,7 +8,7 @@
       <class name="com.globalchk.tests.LoginTestAdmin">
         <methods>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="addUserAdminReading"/>
           <include name="destory"/>
         </methods>
       </class> <!-- com.globalchk.tests.LoginTestAdmin -->
