@@ -9,7 +9,7 @@ public class AdminReadingCenterAdd {
 	
 	public WebDriver driver;
 	
-	public AdminReadingCenterAdd(WebDriver d){
+	public AdminReadingCenterAdd(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
 	
