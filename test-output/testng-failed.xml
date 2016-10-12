@@ -2,22 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="30" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <parameter name="browserName" value="Local Chrome"/>
-  <test thread-count="10" name="Windows 8.1, Chrome 53.0.2785.116" parallel="methods">
+  <test thread-count="0" name="Windows 8.1, Chrome 53.0.2785.116" parallel="methods">
     <parameter name="browserName" value="Local Chrome"/>
     <classes>
       <class name="com.globalchk.tests.LoginTestAdmin"/>
     </classes>
   </test> <!-- Windows 8.1, Chrome 53.0.2785.116 -->
-  <test name="Windows 8.1, Chrome 53.0.2785.116(failed)" parallel="methods">
-    <parameter name="browserName" value="Local Chrome"/>
-    <classes>
-      <class name="com.globalchk.tests.LoginTestAdmin">
-        <methods>
-          <include name="setUp"/>
-          <include name="loginTest"/>
-          <include name="destory"/>
-        </methods>
-      </class> <!-- com.globalchk.tests.LoginTestAdmin -->
-    </classes>
-  </test> <!-- Windows 8.1, Chrome 53.0.2785.116(failed) -->
 </suite> <!-- Failed suite [Suite] -->

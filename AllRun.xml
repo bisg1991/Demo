@@ -3,7 +3,7 @@
 <suite thread-count="30" name="Suite" parallel="tests">
 
 	<test name="Windows 8.1, Chrome 53.0.2785.116" parallel="methods"
-		thread-count="10">
+		thread-count="0">
 		<parameter name="browserName" value="Local Chrome" />
 		<classes>
 			<class name="com.globalchk.tests.LoginTestAdmin" />

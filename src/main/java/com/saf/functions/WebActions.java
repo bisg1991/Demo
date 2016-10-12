@@ -1,5 +1,6 @@
 package com.saf.functions;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.StaleElementReferenceException;
@@ -71,10 +72,29 @@ public class WebActions {
 		return true;
 	}
     
-	public WebElement selectdropdown(WebElement ele,String option){
+	public WebElement selectdropdown(WebElement ele,String element){
     	Select sel = new Select(ele);
-    	sel.selectByVisibleText(option);
+        sel.selectByVisibleText(element);
+    	//sel.selectByIndex(a);
+        //sel.selectByValue(option);
     	return ele;
+    	
     }
 
+	/*public WebElement selectdropdown2(WebElement ele,String option, WebElement ele2){
+		
+		List<WebElement> lst=ele;
+		for(WebElement i:lst)
+        {
+            System.out.println(i.getText());
+            Select sel = new Select(ele);
+            sel.selectByVisibleText(ele2.getText());  
+        } 
+            // Select a value from the drop down list Selenium WebDriver
+		
+
+		
+		
+	}*/
+	
 }

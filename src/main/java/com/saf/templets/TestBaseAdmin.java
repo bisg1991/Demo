@@ -3,6 +3,7 @@ package com.saf.templets;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -12,10 +13,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
-import com.globchk.pageObjects.AdminReadingCenterAdd;
+import com.globchk.pageObjects.AdminReadingCenterAddObjects;
 import com.globchk.pages.AdminReadingCenterAd;
 import com.globchk.pages.LandingPage;
 import com.globchk.pages.LandingPageAdmin;
+import com.saf.functions.Browser;
 import com.saf.functions.CommonFunctionsLib;
 import com.saf.functions.WebActions;
 
@@ -28,11 +30,8 @@ public class TestBaseAdmin {
 	@BeforeClass
 	public void setUp() {
 
-		System.setProperty("webdriver.gecko.driver", "F:\\seleniumOcm30\\geckodriver-v0.10.0-win64\\geckodriver.exe");
-        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-		capabilities.setCapability("marionette", true);
-		WebDriver driver = new MarionetteDriver(capabilities); //for selenium 3 use new
-		driver = new FirefoxDriver();
+		
+		driver=Browser.getBrowsers("Chrome");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -40,14 +39,14 @@ public class TestBaseAdmin {
 		CommonFunctionsLib.log("Navigate to 'http://globechek.softwebopensource.com/admin'");
 		action = new WebActions(driver);
 		landingPage = new LandingPageAdmin(driver, action);
-		add=new AdminReadingCenterAd(driver, action);
+//		add=new AdminReadingCenterAd(driver, action);
 	}
 
-	@AfterClass
+	/*@AfterClass
 	public void destory() {
 		if (driver != null) {
 			driver.close();
 			driver.quit();
 		}
-	}
+	}*/
 }

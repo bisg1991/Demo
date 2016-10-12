@@ -31,7 +31,5 @@ public class LandingPageAdmin {
     	CommonFunctionsLib.log("Clicked on the signin button");
 		
     	return new HomePageAdmin(driver, action);
-    	
-    	
     }
 }
