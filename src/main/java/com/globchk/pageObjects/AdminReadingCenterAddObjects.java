@@ -37,11 +37,11 @@ public class AdminReadingCenterAddObjects {
 	@FindBy(id="confirm_password")
 	public WebElement txtConfirmPassword;
 	
-	/*@FindBy(name="user_type")
-	public WebElement dropusertype;*/
-	
 	@FindBy(css="select[name='user_type']")
 	public WebElement dropusertype;
+	
+	@FindBy(xpath="html/body/div[1]/div/div/div[3]/section/div/div/form/div[1]/div[6]/select")
+	public WebElement dropvalue;
 	
 	@FindBy(xpath="//select[@name='user_type']/option[text()='Reading Center']")
 	public WebElement dropusertypeval;
@@ -54,6 +54,9 @@ public class AdminReadingCenterAddObjects {
 	
 	@FindBy(xpath="//button[@type='submit']")
 	public WebElement btnsubmit;
+	
+	@FindBy(xpath="//div[@class='alert alert-success ng-scope']/strong[text()='User added successfully.']")
+	public WebElement messageAdminReaAdd;
 	
 
 }

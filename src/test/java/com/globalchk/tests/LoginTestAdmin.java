@@ -1,5 +1,6 @@
 package com.globalchk.tests;
 
+import java.awt.AWTException;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class LoginTestAdmin extends TestBaseAdmin {
 		}
 	
         @Test (priority=2)
-        public void addUserAdminReading() throws SeleniumException, InterruptedException, IOException{
+        public void addUserAdminReading() throws SeleniumException, InterruptedException, IOException, AWTException{
         	add.addReadingcenteruser();
         }
 }

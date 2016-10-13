@@ -1,5 +1,6 @@
 package com.globchk.pages;
 
+import java.awt.AWTException;
 import java.io.IOException;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class AdminReadingCenterAd extends HomePageAdmin {
 	}
 
 	 
-    public void addReadingcenteruser() throws SeleniumException, InterruptedException, IOException{
+    public void addReadingcenteruser() throws SeleniumException, InterruptedException, IOException, AWTException{
     	
     	action.click(arcd.linkAdminReadingCenter);
     	CommonFunctionsLib.log("Clicked on the Admin/ReadingCenter dropdown menu");
@@ -51,31 +52,27 @@ public class AdminReadingCenterAd extends HomePageAdmin {
     	arcd.txtConfirmPassword.sendKeys("123456");
     	CommonFunctionsLib.log("Confirm password entered");
     	
-    	
-    	
-    	/*sele=new Select(driver.findElement(By.name("user_type")));
-    	sele.selectByVisibleText("Admin");
-    	driver.findElement(By.cssSelector("option[value=\"string:Admin\"]")).click();*/
-    	
     	action.click(arcd.dropusertype);
     	action.selectdropdown(arcd.dropusertype,"Admin" );
         CommonFunctionsLib.log("User type selected from the dropdown");
-    	
-        //Thread.sleep(1000);
         
-    	action.click(arcd.dropuserstatus);
+        String dropdata=arcd.dropvalue.getAttribute("value");
+    	
+        action.click(arcd.dropuserstatus);
     	action.selectdropdown(arcd.dropuserstatus,"Active" );
     	CommonFunctionsLib.log("User status selected from the dropdown");
     	
-    	//Thread.sleep(1500);
-    	
     	action.click(arcd.btnprofileimage);
-    	Thread.sleep(2000);
-    	Runtime.getRuntime().exec("C:\\Users\\BISWAJIT\\Desktop\\AutoIT\\ProfileImageUpload.exe");
+    	Thread.sleep(1000);
+    	action.UploadFile("C:\\Users\\Biswajit.Ghosh\\Desktop\\Mukharjee.png");
     	CommonFunctionsLib.log("Clicked on the profile image upload button");
     	
     	action.click(arcd.btnsubmit);
     	CommonFunctionsLib.log("Clicked on the Submit button");
+    	
+     
+        System.out.println( arcd.messageAdminReaAdd.getText());  
+        CommonFunctionsLib.log("The user"+dropdata +"is added successfully" );
     }
 
 

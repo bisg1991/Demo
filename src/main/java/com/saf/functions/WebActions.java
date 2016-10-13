@@ -1,6 +1,10 @@
 package com.saf.functions;
 
-import java.util.List;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.StaleElementReferenceException;
@@ -75,26 +79,22 @@ public class WebActions {
 	public WebElement selectdropdown(WebElement ele,String element){
     	Select sel = new Select(ele);
         sel.selectByVisibleText(element);
-    	//sel.selectByIndex(a);
-        //sel.selectByValue(option);
     	return ele;
     	
     }
 
-	/*public WebElement selectdropdown2(WebElement ele,String option, WebElement ele2){
-		
-		List<WebElement> lst=ele;
-		for(WebElement i:lst)
-        {
-            System.out.println(i.getText());
-            Select sel = new Select(ele);
-            sel.selectByVisibleText(ele2.getText());  
-        } 
-            // Select a value from the drop down list Selenium WebDriver
-		
-
-		
-		
-	}*/
+	 public static void UploadFile(String filePath) throws AWTException {
+		  StringSelection stringSelection = new StringSelection(filePath);
+		  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+		  Robot robot = new Robot();
+		  robot.keyPress(KeyEvent.VK_ENTER);
+		  robot.keyRelease(KeyEvent.VK_ENTER);
+		  robot.keyPress(KeyEvent.VK_CONTROL);
+		  robot.keyPress(KeyEvent.VK_V);
+		  robot.keyRelease(KeyEvent.VK_V);
+		  robot.keyRelease(KeyEvent.VK_CONTROL);
+		  robot.keyPress(KeyEvent.VK_ENTER);
+		  robot.keyRelease(KeyEvent.VK_ENTER);
+		 }
 	
 }

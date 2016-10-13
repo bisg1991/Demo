@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30197" started-at="2016-10-11T06:06:36Z" finished-at="2016-10-11T06:07:06Z">
+  <suite name="Suite" duration-ms="25340" started-at="2016-10-13T13:29:14Z" finished-at="2016-10-13T13:29:39Z">
     <groups>
     </groups>
-    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="30197" started-at="2016-10-11T06:06:36Z" finished-at="2016-10-11T06:07:06Z">
+    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="25340" started-at="2016-10-13T13:29:14Z" finished-at="2016-10-13T13:29:39Z">
       <class name="com.globalchk.tests.LoginTestAdmin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@1d251891]" name="setUp" is-config="true" duration-ms="19855" started-at="2016-10-11T11:36:36Z" finished-at="2016-10-11T11:36:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@6093dd95]" name="setUp" is-config="true" duration-ms="14103" started-at="2016-10-13T18:59:14Z" finished-at="2016-10-13T18:59:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.globalchk.tests.LoginTestAdmin@1d251891]" name="loginTest" duration-ms="612" started-at="2016-10-11T11:36:56Z" finished-at="2016-10-11T11:36:56Z">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.globalchk.tests.LoginTestAdmin@6093dd95]" name="loginTest" duration-ms="530" started-at="2016-10-13T18:59:28Z" finished-at="2016-10-13T18:59:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="addUserAdminReading()[pri:2, instance:com.globalchk.tests.LoginTestAdmin@1d251891]" name="addUserAdminReading" duration-ms="9710" started-at="2016-10-11T11:36:56Z" finished-at="2016-10-11T11:37:06Z">
+        <test-method status="PASS" signature="addUserAdminReading()[pri:2, instance:com.globalchk.tests.LoginTestAdmin@6093dd95]" name="addUserAdminReading" duration-ms="10668" started-at="2016-10-13T18:59:29Z" finished-at="2016-10-13T18:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserAdminReading -->
