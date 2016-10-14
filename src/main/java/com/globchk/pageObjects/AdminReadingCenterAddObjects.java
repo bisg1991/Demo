@@ -7,9 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AdminReadingCenterAddObjects {
 	
-	//public WebDriver driver;
-	
-
 	
 	public AdminReadingCenterAddObjects(WebDriver driver){
 

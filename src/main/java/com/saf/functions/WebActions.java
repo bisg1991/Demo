@@ -97,4 +97,11 @@ public class WebActions {
 		  robot.keyRelease(KeyEvent.VK_ENTER);
 		 }
 	
+	 public String getSelectedTextFromDropDown(WebElement el) throws SeleniumException {
+		  Select select = new Select(el);
+		  WebElement temp = select.getFirstSelectedOption();
+		  String text = temp.getText();
+		  System.err.println("Drop val: " + text);
+		  return text;
+		 }
 }
