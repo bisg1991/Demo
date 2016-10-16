@@ -26,7 +26,7 @@ public class AdminReadingCenterAd extends HomePageAdmin {
 		arcd = new AdminReadingCenterAddObjects(driver);
 	}
 
-	public void addReadingcenteruser() throws SeleniumException, InterruptedException, IOException, AWTException {
+	public PatientAdd addReadingcenteruser() throws SeleniumException, InterruptedException, IOException, AWTException {
 
 		action.click(arcd.linkAdminReadingCenter);
 		CommonFunctionsLib.log("Clicked on the Admin/ReadingCenter dropdown menu");
@@ -42,7 +42,7 @@ public class AdminReadingCenterAd extends HomePageAdmin {
 		arcd.txtLastName.sendKeys("demo");
 		CommonFunctionsLib.log("Last name entered");
 
-		arcd.txtEmail.sendKeys("test321@gmail.com");
+		arcd.txtEmail.sendKeys("testings321@softwebsolutions.com");
 		CommonFunctionsLib.log("Email entered");
 
 		arcd.txtPassword.sendKeys("123456");
@@ -63,13 +63,15 @@ public class AdminReadingCenterAd extends HomePageAdmin {
 
 		action.click(arcd.btnprofileimage);
 		Thread.sleep(1000);
-		action.UploadFile("C:\\Users\\Biswajit.Ghosh\\Desktop\\Mukharjee.png");
+		action.UploadFile("C:\\Users\\BISWAJIT\\Desktop\\dr_ramakanta_panda.jpg");
 		CommonFunctionsLib.log("Clicked on the profile image upload button");
 
 		action.click(arcd.btnsubmit);
 		CommonFunctionsLib.log("Clicked on the Submit button");
 
 		CommonFunctionsLib.log("The user " + dropdata + " is added successfully");
+		
+		return new PatientAdd(driver,action);
 	}
 
 }

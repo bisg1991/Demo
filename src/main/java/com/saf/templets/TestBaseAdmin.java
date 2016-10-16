@@ -17,6 +17,7 @@ import com.globchk.pageObjects.AdminReadingCenterAddObjects;
 import com.globchk.pages.AdminReadingCenterAd;
 import com.globchk.pages.LandingPage;
 import com.globchk.pages.LandingPageAdmin;
+import com.globchk.pages.PatientAdd;
 import com.saf.functions.Browser;
 import com.saf.functions.CommonFunctionsLib;
 import com.saf.functions.WebActions;
@@ -26,6 +27,7 @@ public class TestBaseAdmin {
 	private WebActions action;
 	protected LandingPageAdmin landingPage;
 	protected AdminReadingCenterAd add;
+	protected PatientAdd patientadd;
 
 	@BeforeClass
 	public void setUp() {
@@ -39,7 +41,7 @@ public class TestBaseAdmin {
 		CommonFunctionsLib.log("Navigate to 'http://globechek.softwebopensource.com/admin'");
 		action = new WebActions(driver);
 		landingPage = new LandingPageAdmin(driver, action);
-//		add=new AdminReadingCenterAd(driver, action);
+
 	}
 
 	/*@AfterClass

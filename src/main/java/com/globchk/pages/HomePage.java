@@ -16,11 +16,11 @@ public class HomePage extends LandingPage{
 		obj = new HomePageObjects(driver);
 	}
 
-	public HomePage verifyHomePage(){
+	public AdminReadingCenterAd verifyHomePage(){
 		
 		Assert.assertTrue(driver.getCurrentUrl().contains(obj.strTitle));
 		CommonFunctionsLib.log("Verify user is on home page");
 		
-		return new HomePage(driver, action);
+		return new AdminReadingCenterAd(driver, action);
 	}
 }

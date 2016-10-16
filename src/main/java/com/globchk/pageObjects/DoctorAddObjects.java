@@ -32,7 +32,11 @@ public class DoctorAddObjects {
 	@FindBy(xpath="//div[@class='row']/div[2]/label/input[@value='female']")
 	public WebElement radiofemale;
 	
+	@FindBy(id="dp1476508942876")
+	public WebElement seldob;
 	
+	@FindBy(name="special")
+	public WebElement dropspecial;
 	
 
 }

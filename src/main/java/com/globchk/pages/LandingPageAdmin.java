@@ -19,7 +19,7 @@ public class LandingPageAdmin {
 		objs = new LandingPageObjectsAdmin(driver);
 		this.action = action; 
 	}
-    public HomePageAdmin login(String username, String password) throws SeleniumException{
+    public AdminReadingCenterAd login(String username, String password) throws SeleniumException{
     	
     	objs.txtemails.sendKeys(username);
     	CommonFunctionsLib.log("Enter Email text: '" + username + "'");
@@ -30,6 +30,6 @@ public class LandingPageAdmin {
     	action.click(objs.btnsignin);
     	CommonFunctionsLib.log("Clicked on the signin button");
 		
-    	return new HomePageAdmin(driver, action);
+    	return new AdminReadingCenterAd(driver, action);
     }
 }
