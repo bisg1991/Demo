@@ -63,7 +63,7 @@ public class AdminReadingCenterAd extends HomePageAdmin {
 
 		action.click(arcd.btnprofileimage);
 		Thread.sleep(1000);
-		action.UploadFile("C:\\Users\\BISWAJIT\\Desktop\\dr_ramakanta_panda.jpg");
+		action.UploadFile("C:\\Users\\Biswajit.Ghosh\\Desktop\\Mukharjee.png");
 		CommonFunctionsLib.log("Clicked on the profile image upload button");
 
 		action.click(arcd.btnsubmit);

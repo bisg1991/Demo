@@ -57,6 +57,12 @@ public class PatientAdd extends HomePageAdmin {
 		
 		action.click(pao.radiomale).click();
 		CommonFunctionsLib.log("Gender has been selected");
+		
+		action.click(pao.seldob).click();
+		action.selectdropdown(pao.dropmonth,"Feb" );
+		action.selectdropdown(pao.dropyear, "1991");
+		action.click(pao.date);
+		CommonFunctionsLib.log("Date of birth selected from the calendar");
 	}
 	
 }

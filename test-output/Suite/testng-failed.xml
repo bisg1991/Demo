@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="30" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="password" value="admin"/>
   <parameter name="browserName" value="Local Chrome"/>
-  <test thread-count="0" name="Windows 8.1, Chrome 53.0.2785.116" parallel="methods">
+  <parameter name="username" value="admin@admin.com"/>
+  <test name="Windows 8.1, Chrome 53.0.2785.116(failed)" parallel="methods">
+    <parameter name="password" value="admin"/>
     <parameter name="browserName" value="Local Chrome"/>
+    <parameter name="username" value="admin@admin.com"/>
     <classes>
-      <class name="com.globalchk.tests.LoginTestAdmin"/>
+      <class name="com.globalchk.tests.LoginTestAdmin">
+        <methods>
+          <include name="setUp"/>
+          <include name="addUserAdminReading"/>
+        </methods>
+      </class> <!-- com.globalchk.tests.LoginTestAdmin -->
     </classes>
-  </test> <!-- Windows 8.1, Chrome 53.0.2785.116 -->
+  </test> <!-- Windows 8.1, Chrome 53.0.2785.116(failed) -->
 </suite> <!-- Failed suite [Suite] -->

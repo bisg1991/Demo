@@ -32,4 +32,19 @@ public class LandingPageAdmin {
 		
     	return new AdminReadingCenterAd(driver, action);
     }
+
+    public PatientAdd logins(String username, String password) throws SeleniumException{
+    	
+    	objs.txtemails.sendKeys(username);
+    	CommonFunctionsLib.log("Enter Email text: '" + username + "'");
+    	
+    	objs.txtpasswords.sendKeys(password);
+    	CommonFunctionsLib.log("Enter Password text: '" + password + "'");
+    	
+    	action.click(objs.btnsignin);
+    	CommonFunctionsLib.log("Clicked on the signin button");
+		
+    	return new PatientAdd(driver, action);
+    }
+
 }

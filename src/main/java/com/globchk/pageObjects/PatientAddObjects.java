@@ -50,7 +50,7 @@ public class PatientAddObjects {
 	@FindBy(name="confirm_password")
 	public WebElement txtconfirmpass;
 	
-	@FindBy(id="dp1476539603545")
+	@FindBy(name="dateofbirth")
 	public WebElement seldob;
 	
 	@FindBy(xpath="//div[@class='row']/div[1]/input[@value='male']")
@@ -64,5 +64,14 @@ public class PatientAddObjects {
 	
 	@FindBy(xpath="//div[@class='box-footer']/button[text()='SUBMIT']")
 	public WebElement btnsubmit;
+	
+	@FindBy(xpath="//div[@id='ui-datepicker-div']/div/div/select[@class='ui-datepicker-month']")
+	public WebElement dropmonth;
+	
+	@FindBy(xpath="//div[@id='ui-datepicker-div']/div/div/select[@class='ui-datepicker-year']")
+	public WebElement dropyear;
+	
+	@FindBy(xpath="//div[@id='ui-datepicker-div']/table/tbody/tr[4]/td[1]/a[text()='17']")
+	public WebElement date;
 	
 }

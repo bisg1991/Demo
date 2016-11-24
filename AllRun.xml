@@ -5,6 +5,8 @@
 	<test name="Windows 8.1, Chrome 53.0.2785.116" parallel="methods"
 		thread-count="0">
 		<parameter name="browserName" value="Local Chrome" />
+		<parameter name="username" value="admin@admin.com" />
+		<parameter name="password" value="admin" />
 		<classes>
 			<class name="com.globalchk.tests.LoginTestAdmin" />
 		</classes>
