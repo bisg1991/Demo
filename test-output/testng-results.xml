@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29149" started-at="2016-10-21T04:34:48Z" finished-at="2016-10-21T04:35:17Z">
+  <suite name="Suite" duration-ms="31830" started-at="2016-11-29T08:50:33Z" finished-at="2016-11-29T08:51:04Z">
     <groups>
     </groups>
-    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="29149" started-at="2016-10-21T04:34:48Z" finished-at="2016-10-21T04:35:17Z">
+    <test name="Windows 8.1, Chrome 53.0.2785.116" duration-ms="31830" started-at="2016-11-29T08:50:33Z" finished-at="2016-11-29T08:51:04Z">
       <class name="com.globalchk.tests.LoginTestAdmin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@57baeedf]" name="setUp" is-config="true" duration-ms="19756" started-at="2016-10-21T10:04:48Z" finished-at="2016-10-21T10:05:08Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globalchk.tests.LoginTestAdmin@53b32d7]" name="setUp" is-config="true" duration-ms="23890" started-at="2016-11-29T14:20:33Z" finished-at="2016-11-29T14:20:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:1, instance:com.globalchk.tests.LoginTestAdmin@57baeedf]" name="loginTest" duration-ms="1982" started-at="2016-10-21T10:05:08Z" finished-at="2016-10-21T10:05:10Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:1, instance:com.globalchk.tests.LoginTestAdmin@53b32d7]" name="loginTest" duration-ms="748" started-at="2016-11-29T14:20:57Z" finished-at="2016-11-29T14:20:57Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="addUserAdminReading()[pri:2, instance:com.globalchk.tests.LoginTestAdmin@57baeedf]" name="addUserAdminReading" duration-ms="6852" started-at="2016-10-21T10:05:10Z" finished-at="2016-10-21T10:05:17Z">
+        <test-method status="PASS" signature="addUserAdminReading()[pri:2, instance:com.globalchk.tests.LoginTestAdmin@53b32d7]" name="addUserAdminReading" duration-ms="7036" started-at="2016-11-29T14:20:57Z" finished-at="2016-11-29T14:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserAdminReading -->
